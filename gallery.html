@@ -1,0 +1,149 @@
+<html>
+<head>
+    <title>Gallery</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/banner4.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 12vw;
+        }
+
+        header {
+            margin: 0.5% 1%;
+            display: flex;
+            width: 98%;
+            height: 8vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .page {
+            font-size: 5vmin;
+            width: 60%;
+            margin: auto;
+            color: red;
+            text-shadow: 1vmin 1vmin 1vmin rgb(39, 39, 39);
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menubar {
+            display: flex;
+            list-style-type: none;
+            position: absolute;
+            right: 0;
+            width: 50%;
+        }
+
+        .menubar li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1vw;
+        }
+
+        .menubar li a {
+            color: white;
+            font-size: 3.5vmin;
+            text-decoration: none;
+            margin: 1vmin;
+            transition: 1s;
+        }
+
+        .menubar li a:hover {
+            color: red;
+        }
+
+        table{
+            margin: auto;
+            overflow: hidden;
+        }
+
+        tr{
+            display: flex;
+        }
+
+        .img{
+            height: 30vh;
+            width: 23vw;
+            border: 0.3vmin solid red;
+            overflow: hidden;
+            margin: 2vmin;
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+            border: none;
+        }
+
+
+        td img:hover{
+            transition-duration: .5s;
+            transform: scale(1.2) rotate(3deg);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="images/triptok.png"></div>
+        <div class="page">Gallery</div>
+        <div class="menu">
+        <ul class="menubar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fea_des.html">Featured Destinations</a></li>
+        <li><a href="book.html">Book Now</a></li>
+        <li><a href="reviews.html">User Reviews</a></li>
+        </ul>
+        </div>
+    </header>       
+     
+    <table class="main">
+    
+    <tr>
+        <td class="img"><img src="images/banner1.jpg"></td>
+        <td class="img"><img src="images/fea_img_1.jpg"></td>
+        <td class="img"><img src="images/travel-3.jpg"></td>
+    </tr>
+
+    <tr>
+        <td class="img"><img src="images/banner2.jpg"></td>
+        <td class="img"><img src="images/travel-1.jpg"></td>
+        <td class="img"><img src="images/banner3.jpg"></td>
+    </tr>
+
+    <tr>
+        <td class="img"><img src="images/banner4.jpg"></td>
+        <td class="img"><img src="images/travel-4.jpg"></td>
+        <td class="img"><img src="images/2.jpg"></td>
+    </tr>
+
+    <tr>
+        <td class="img"><img src="images/fea_img_3.jpg"></td>
+        <td class="img"><img src="images/travel-2.jpg"></td>
+        <td class="img"><img src="images/1.jpg"></td>
+    </tr>
+    </table>
+
+</body>
+</html>

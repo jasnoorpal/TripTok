@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url(images/banner3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        width: 12vw;
+      }
+
+      .aboutpage {
+        background-color: rgb(96, 180, 180);
+      }
+
+      header {
+        display: flex;
+        width: 100%;
+        height: 8vmin;
+        display: flex;
+        margin: 0;
+        align-items: center;
+      }
+
+      .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .menubar {
+        display: flex;
+        list-style-type: none;
+        position: absolute;
+        right: 0;
+        width: 50%;
+      }
+
+      .menubar li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1vw;
+      }
+
+      .menubar li a {
+        color: white;
+        font-size: 3.5vmin;
+        text-decoration: none;
+        padding: 2.5vmin;
+        transition: 1s;
+      }
+
+      .menubar li a:hover {
+        color: red;
+        transform: scale(1.2);
+      }
+
+      .area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5vmin;
+      }
+
+      .leftside {
+        height: 80vh;
+        width: 30vw;
+      }
+
+      .leftside div img {
+        color: black;
+        opacity: 0.8;
+      }
+
+      .center {
+        max-height: 80vh;
+        max-width: 30vw;
+        margin: auto;
+        border: 1px solid black;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+      }
+
+      .heading {
+        margin: 0;
+        padding: 1vmin 0vmin;
+      }
+
+      .heading a {
+        color: white;
+        font-family: cursive;
+        font-size: 2.6vmin;
+        margin: 0;
+        padding: 0;
+      }
+
+      .info {
+        font-family: "Courier New", Courier, monospace;
+        text-align: justify;
+        color: rgb(255, 209, 209);
+        font-size: 2.6vmin;
+        padding: 1vmin;
+      }
+
+      .maker {
+        width: 100%;
+        margin: auto;
+        color: #ffffff;
+        font-size: 2.5vmin;
+        font-weight: 800;
+      }
+
+      .rightside {
+        height: 80vh;
+        width: 30vw;
+      }
+
+      .area img {
+        height: 35vh;
+        width: 30vw;
+      }
+
+      .area p {
+        font-size: 7vmin;
+        margin: auto;
+        padding-left: 4vw;
+        color: rgb(81, 212, 5);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo"><img src="images/triptok.png" /></div>
+      <div class="menu">
+        <ul class="menubar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li class="aboutpage"><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="area">
+      <div class="leftside">
+        <div class="img_1"><img src="images/banner1.jpg" /></div>
+        <p>..Where To Go..</p>
+        <div class="img_2"><img src="images/banner2.jpg" /></div>
+      </div>
+      <div class="center">
+        <h1 class="heading" align="center">
+          <a href="index.html">www.triptok.com</a>
+        </h1>
+        <h2 class="info">
+          “Travel is the main thing you purchase that makes you more
+          extravagant”. We, at Triptok, swear by this and put stock in
+          satisfying travel dreams that make you perpetually rich constantly.
+        </h2>
+        <h2 class="info">
+          We offer the best limits on our top-rated visit bundles to clients who
+          pick our viable administrations over and over. How about we remind you
+          indeed that we don’t expect to be your visit and travel specialists;
+          we endeavor to be your vacation accomplices until the end of time.
+        </h2>
+        <h1 class="maker" align="center">By -- Jasnoor Pal Singh</h1>
+      </div>
+      <div class="rightside">
+        <div class="img_3"><img src="images/travel-5.jpeg" /></div>
+        <p>..How To Go..</p>
+        <div class="img_4"><img src="images/travel-6.jfif" /></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                             
+    <title>Booking</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/banner4.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 12vw;
+        }
+
+        header {
+            margin: 0.5% 1%;
+            display: flex;
+            width: 98%;
+            height: 8vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .page {
+            font-size: 5vmin;
+            width: 60%;
+            margin: auto;
+            color: red;
+            text-shadow: 1vmin 1vmin 1vmin rgb(39, 39, 39);
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menubar {
+            display: flex;
+            list-style-type: none;
+            position: absolute;
+            right: 0;
+            width: 50%;
+        }
+
+        .menubar li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1vw;
+        }
+
+        .menubar li a {
+            color: white;
+            font-size: 3.5vmin;
+            text-decoration: none;
+            margin: 1vmin;
+            transition: 1s;
+        }
+
+        .menubar li a:hover {
+            color: red;
+        }
+
+        .area {
+            height: 50%;
+            width: 100%;
+            margin-top: 6%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3));
+            position: fixed;
+        }
+        
+        .box {
+            background-color: #fff;
+            height: 50%;
+            width: 50%;
+            border-inline: 0.2vmin solid rgb(255, 0, 0);
+            border-radius: 5vmin;
+            overflow: hidden;
+            margin: 6% auto;
+        }
+
+        .group-1 {
+            display: flex;
+            width: 100%;
+            margin: 3.5vmin 0;
+            gap: 3vw;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .family {
+            height: 3vmin;
+            width: 22vmin;
+            padding: 2% 2%;
+            font-size: 1.8vmin;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            border: 0.2vmin solid #ced4da;
+            border-radius: 0.30vmin;
+        }
+
+        .group-2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10%;
+        }
+
+        .members {
+            height: 50%;
+            width: 15%;
+            padding: 1% 2%;
+            font-size: 1.8vmin;
+            border: 0.2vmin solid black;
+        }
+
+        .btn {
+            height: 20%;
+            width: 100%;
+            margin: auto;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin: 2.5% 0;
+        }
+        
+        .sub-btn {
+            height: 100%;
+            width: 20%;
+            border: none;
+            border-radius: 1.5em;
+            font-family: cursive;
+            font-weight: 900;
+            font-size: 1.8vmin;
+            color: rgb(2, 255, 192);
+            background: #5b5e61;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo"><img src="images/triptok.png"></div>
+    <div class="page">Book Now</div>
+    <div class="menu">
+    <ul class="menubar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="fea_des.html">Featured Destinations</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="reviews.html">User Reviews</a></li>
+    </ul>
+    </div>
+</header>
+
+<section>
+<div class="area">
+<div class="box">
+
+<div class="inbox">
+<form action="index.html" method="get" class="search-form">
+    <div class="group-1">
+        <div class="first">
+            <input name="city" type="text" class="family" id="inputCity" placeholder="Type your destination...">
+        </div>
+        <div class="first">
+            <input name="check-in" type="date" class="family" id="inputCheckIn" placeholder="Check In">
+        </div>
+        <div class="first">
+            <input name="check-out" type="date" class="family" id="inputCheckOut" placeholder="Check Out">
+        </div>
+    </div>
+</form>
+</div>
+
+<div class="inbox2">
+<form class="input-form">
+    <div class="group-2">                                            
+        <select name="adult" class="members" id="adult">
+            <option value="">Adult</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>                                 
+        <select name="children" class="members" id="children">
+            <option value="">Children</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <select name="room" class="members" id="room">
+            <option value="">Room(s)</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+    <div class="btn">
+        <button type="submit" class="sub-btn">Check Availability</button>
+    </div>
+</form>
+</div>
+
+</div>
+</div>
+</section>
+
+
+</body>
+</html>

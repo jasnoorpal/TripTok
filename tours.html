@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours</title>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/banner2.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 12vw;
+        }
+
+        .tourpage {
+            background-color: rgb(96, 180, 180);
+        }
+
+        header {
+            display: flex;
+            width: 100%;
+            height: 8vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menubar {
+            display: flex;
+            list-style-type: none;
+            position: absolute;
+            right: 0;
+            width: 50%;
+        }
+
+        .menubar li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1vw;
+        }
+
+        .menubar li a {
+            color: white;
+            font-size: 3.5vmin;
+            text-decoration: none;
+            padding: 2.5vmin;
+            transition: 1s;
+        }
+
+        .menubar li a:hover {
+            color: red;
+            transform: scale(1.2);
+        }
+
+        .area {
+            height: 85vh;
+            width: 90vw;
+            background-image: linear-gradient(rgba(0, 255, 255, 0.5), rgba(0, 255, 170, 0.3));
+            margin: auto;
+        }
+        
+        .box {
+            display: flex;
+            position: absolute;
+            top: 35vh;
+            left: 25vw;
+            height: 30vh;
+            border-radius: 20vmin;
+            width: 50vw;
+            background-color: rgb(225, 225, 225, 0.9);
+            font-family: Calibri, sans-serif;
+        }
+
+        .box p {
+            padding: 8.5vmin;
+            font-size: 4vmin;
+        }
+
+        .box a button {
+            width: 8vw;
+            height: 6vh;
+            position: absolute;
+            right: 6vw;
+            top: 12vh;
+            border: 1px solid black;
+            border-radius: 4vmin;
+            background: transparent;
+            font-size: 2vmin;
+        }
+
+        .box a button:hover{
+            transform: scale(1.05);
+            transition: 0.5s;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo"><img src="images/triptok.png"></div>
+    <div class="menu">
+    <ul class="menubar">
+        <li><a href="index.html">Home</a></li>
+        <li class="tourpage"><a href="tours.html">Tours</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    </div>
+</header>
+<div class="area">
+    <div class="box">
+        <p>No Tours Booked By You!</p>
+        <a href="book.html"><button>Book Now</button></a>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Destinations</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/banner4.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 12vw;
+        }
+
+        header {
+            margin: 0.5% 1%;
+            display: flex;
+            width: 98%;
+            height: 8vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .page {
+            font-size: 5vmin;
+            width: 75%;
+            margin: auto;
+            color: red;
+            text-shadow: 1vmin 1vmin 1vmin rgb(39, 39, 39);
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menubar {
+            display: flex;
+            list-style-type: none;
+            position: absolute;
+            right: 0;
+            width: 50%;
+        }
+
+        .menubar li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1vw;
+        }
+
+        .menubar li a {
+            color: white;
+            font-size: 3.5vmin;
+            text-decoration: none;
+            margin: 1vmin;
+            transition: 1s;
+        }
+
+        .menubar li a:hover {
+            color: red;
+        }
+
+        .box {
+            position: relative;
+            height: 75vh;
+            width: 22vw;
+        }
+
+        .top {
+            height: 2vh;
+            width: 100%;
+            border-top-right-radius: 2vmin;
+            border-top-left-radius: 2vmin;
+            background-image: linear-gradient(#2d557d,#9610fd);
+        }
+
+        .bot {
+            height: 2vh;
+            width: 100%;
+            border-bottom-right-radius: 2vmin;
+            border-bottom-left-radius: 2vmin;
+            position: absolute;
+            bottom: 0;
+            background-image: linear-gradient(#9610fd,#2d557d);
+        }
+        
+        .back {
+            height: 72vh;
+            width: 20vw;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            background:rgb(218, 218, 218);
+            /* overflow: hidden; */
+            font-family: serif;
+            position: relative;
+        }
+        
+        .back p {
+            font-size: 3vmin;
+            font-weight: 450;
+            margin: 1vmin 0;
+        }
+
+        hr {
+            background-color: red;
+            height: 0.3vh;
+            margin: 2vh 0;
+            border: 0;  
+        }
+
+        .city_name {
+            width: fit-content;
+            color: rgb(0, 132, 255);
+            font-size: 3.5vmin;
+            font-family: 'Gill Sans';
+            position: absolute;
+            left: 1vmin;
+            top: 29.5vmin;
+        }
+
+        .image img {
+            height: 30vh;
+            width: 100%;
+        }
+
+        .info {
+            margin: 0;
+            padding: 0;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .price {
+            height: 5vh;
+            width: 3vw;
+            border-radius: 50px;
+            background: red;
+            color: white;
+            display: flex;
+            font-size: 2vmin;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 1vmin;
+        }
+
+        .check_btn{
+            height: 5vmin;
+            width: 15vmin;
+            margin: auto;
+            border: .3vmin solid blue;
+            font-size: 3vmin;
+            border-radius: 3vmin;
+            text-decoration: none;
+        }
+
+        .panels {
+            margin: 5vh 14vw;
+            display: flex;
+            gap: 8vmin;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo"><img src="images/triptok.png"></div>
+    <div class="page">featured Destinations</div>
+    <div class="menu">
+    <ul class="menubar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="book.html">Book Now</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="reviews.html">User Reviews</a></li>
+    </ul>
+    </div>
+</header>
+<section class="panels">
+<div class="area">
+<div class="box">
+    <div class="panel-1">
+        <div class="top"></div>
+        <div class="back">
+            <div class="image"><img src="images/fea_img_1.jpg"></div>
+            <div class="info">
+            <h1 class="city_name">Maldives</h1>
+            <h3 class="price">$80</h3>
+            <hr>
+            <p class="about_city" align="center">The Maldives is a nation of islands in the Indian Ocean, that spans across the equator. The Maldives tour offers some of the best beaches, luxurious over-water villas, beautiful corals, and azure waters.</p>
+            <button class="check_btn"><a href="book.html">Book now</a></button>
+            </div>
+        </div> 
+        <div class="bot"></div>
+    </div>
+</div>
+</div>
+<div class="area">
+<div class="box">
+    <div class="panel-2">
+        <div class="top"></div>
+        <div class="back">
+            <div class="image"><img src="images/fea_img_2.jpg"></div>
+            <div class="info">
+            <h1 class="city_name">Paris</h1>
+            <h3 class="price">$100</h3>
+            <hr>
+            <p class="about_city" align="center">Paris, capital of France, is one of the most influential cities in the world. In terms of tourism, Paris is the second most visited city in Europe after London. It is always a good time to visit Paris.</p>
+            <button class="check_btn"><a href="book.html">Book now</a></button>
+            </div>
+        </div>
+        <div class="bot"></div>
+    </div>
+</div>
+</div>
+<div class="area">
+<div class="box">
+    <div class="panel-3">
+        <div class="top"></div>
+        <div class="back">
+            <div class="image"><img src="images/fea_img_3.jpg"></div>
+            <div class="info">
+            <h1 class="city_name">Spain</h1>
+            <h3 class="price">$98</h3>
+            <hr>
+            <p class="about_city" align="center">Spain has several tourist attractions spread across its many cities. From beaches to mountains to historic monuments to churches and palaces, Spain has it all, Barcelona.</p>
+            <button class="check_btn"><a href="book.html">Book now</a></button>
+            </div>
+        </div>
+        <div class="bot"></div>
+    </div>
+</div>
+</div>
+</section>
+</body>
+</html>

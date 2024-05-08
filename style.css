@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(images/banner2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: device-width;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 12vw;
+}
+
+.homepage {
+  background-color: rgb(96, 180, 180);
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menubar {
+  display: flex;
+  list-style-type: none;
+  position: absolute;
+  right: 0;
+  width: 50%;
+}
+
+.menubar li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1vw;
+}
+
+.menubar li a {
+  color: white;
+  font-size: 3.5vmin;
+  text-decoration: none;
+  padding: 2.5vmin;
+  transition: 1s;
+}
+
+.menubar li a:hover {
+  color: red;
+}
+
+.hr {
+  margin-top: 2vh;
+  background: white;
+  height: 0.3vmin;
+  border: 0;
+}
+
+.area-2 {
+  display: flex;
+}
+
+.menulist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side_list {
+  z-index: 10;
+  margin: 2vmin;
+}
+
+.side_list li {
+  display: flex;
+  flex-direction: column;
+}
+
+.side_list li a {
+  padding: 2vh 3vw;
+  border: 0.3vmin solid aqua;
+  border-radius: 10vmin;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.side_list li a:hover {
+  transition: 1s;
+  background: rgb(77, 153, 153);
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+.images {
+  display: flex;
+  width: 75vw;
+  height: 30vh;
+  position: relative;
+  right: 0vw;
+  top: 0vh;
+}
+
+.images div img {
+  height: auto;
+  width: 25vw;
+  transition: 1s;
+  padding-right: 0.5vw;
+  overflow: hidden;
+}
+
+.images div img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 30vh;
+  background-image: linear-gradient(#2d557d, #9610fd);
+  color: #fff;
+  font-family: Calibri, sans-serif;
+}
+
+.footer-logo img {
+  width: 15vw;
+  padding: 7vmin;
+}
+
+.footer-logo h3 {
+  padding: 0px 70px;
+}
+
+.con {
+  margin-left: 13vw;
+  margin-top: 5vh;
+}
+
+.con h4 {
+  margin-bottom: 3vh;
+  font-size: 3vmin;
+}
+
+.con p {
+  font-size: 2vmin;
+  padding: 1vmin;
+}

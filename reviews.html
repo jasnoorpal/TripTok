@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <style>
+       * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/banner1.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 12vw;
+        }
+
+        header {
+            margin: 0.5% 1%;
+            display: flex;
+            width: 98%;
+            height: 8vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .page {
+            font-size: 5vmin;
+            width: 65%;
+            margin: auto;
+            color: red;
+            text-shadow: 1vmin 1vmin 1vmin rgb(39, 39, 39);
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menubar {
+            display: flex;
+            list-style-type: none;
+            position: absolute;
+            right: 0;
+            width: 50%;
+        }
+
+        .menubar li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1vw;
+        }
+
+        .menubar li a {
+            color: white;
+            font-size: 3.5vmin;
+            text-decoration: none;
+            margin: 1vmin;
+            transition: 1s;
+        }
+
+        .menubar li a:hover {
+            color: red;
+        }
+
+        .main{
+            height: 50vh;
+            width: 80vw;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 6vmin;
+            color: white;
+            margin: 4vmin 0;
+        }
+
+        .users {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .users img {
+            height: 20vh;
+            width: auto;
+            border: 0.5vmin dotted red;
+            border-radius: 50%;
+            top: 28vh;
+            position: absolute;
+        }
+
+        .users img:hover{
+            transition: 1s;
+            transform: rotate(360deg);
+        }
+
+        .user_review {
+            background: white;
+            width: 80%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .user_review p {
+            font-size: 2vmin;
+            font-weight: 800;
+            width: 80%;
+            padding: 5vmin;
+            font-family: Calibri;
+            line-height:normal;
+        }
+
+        .user_review h5{
+            position: absolute;
+            top: 23vh;
+            left: 3vw;
+            font-size: 2vmin;
+            color: steelblue;
+            box-shadow: 1vmin 1vmin 1vmin 0 grey;
+        }
+
+        .user_review i{
+            position: absolute;
+            top: 27vh;
+            left: 3vw;
+            font-size: 2vmin;
+            color: steelblue;
+            box-shadow: 1vmin 1vmin 1vmin 0 grey;
+        }
+
+        textarea{
+            height: 16vh;
+            width: 30vw;
+            border-radius: 3vmin;
+            border: none;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            font-size: large;
+            padding: 2vmin;
+            font-size: 2vmin;
+        }
+
+        #button{
+            background-color: lightgray;
+            position: absolute;
+            bottom:0;
+            right: 0;
+            border: none;
+            border-top-left-radius: 3vmin;
+            padding:2vmin;
+            color: blue;
+            text-decoration: underline;
+            font-size: 1.7vmin;
+            font-weight: 800;
+        }
+        #button:hover{
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><img src="images/triptok.png"></div>
+        <div class="page">User Reviews</div>
+        <div class="menu">
+        <ul class="menubar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fea_des.html">Featured Destinations</a></li>
+        <li><a href="book.html">Book Now</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+        </div>
+    </header>  
+
+    <h1 align="center">Users Review</h1>
+    <div class="main">
+    <div class="first users">
+        <div class="user_review">
+            <p>The experience was stress free from booking through to receiving the details of the holiday and we would book with you guys again and recommend to family or friends.</p>
+            <h5>William</h5>
+            <i>Austria</i>
+        </div>
+            <img src="images/user1.jpg">
+    </div>
+    <div class="second users">
+        <div class="user_review">
+            <p>TripTok were great to deal with through a very difficult period. Checking comparable rates we got a great value holiday through this site and Great experience.</p>
+            <h5>Michel</h5>
+            <i>Dubai</i>
+        </div>
+            <img src="images/user2.jpg">
+    </div>
+    <div class="third users">
+        <div class="user_review">
+            <p>The best travelling website I have found on internet. Very easy to use and got a smooth experience with transactions and receiving the details also the price is very cheap.</p>
+            <h5>Kylie Smith</h5>
+            <i>America</i>
+        </div>
+                <img src="images/user3.jpg">
+    </div>
+    </div>
+    </div>
+    <div class="my_review">
+        <textarea name="review" placeholder="Your review here..."></textarea>
+        <button onclick="submit()" id="button">Submit</button>
+    </div>
+    <script>
+        function submit(){
+            alert("Submitted sucessfully!") ? "" : window.location.reload();
+        }
+    </script>
+</body>
+</html>
